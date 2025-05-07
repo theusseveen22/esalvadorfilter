@@ -3,13 +3,13 @@
         <Botao 
         titulo="Pesquisar em toda secretaria"
         descricao="Pesquisar processos de toda a secretaria"
-        :urlImage="logo"
+        :urlImage="iconSearchAll"
         :linkPage="'/'"
         />
         <Botao 
         titulo="Pesquisar por setor"
         descricao="Pesquisar processos por um setor específico"
-        :urlImage="logo"
+        :urlImage="iconSearchSector"
         :linkPage="'/'"
         />
     </div>
@@ -17,7 +17,8 @@
 
 <script setup>
 import Botao from './Botao.vue';
-import logo from "../assets/esalvador_marca_branca.png"
+import iconSearchAll from "../assets/icon-predio.png"
+import iconSearchSector from '../assets/busca-setor.gif'
 </script>
 
 <style>

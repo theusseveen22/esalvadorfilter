@@ -1,11 +1,11 @@
 <script setup>
+import Home from './pages/Home.vue';
 import Header from './components/Header.vue';
-import Body from './components/Body.vue';
 </script>
 
 <template>
     <Header />
-    <Body/>
+    <router-view />
 </template>
 
 <style>

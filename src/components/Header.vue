@@ -1,7 +1,9 @@
 <template lang="">
     <div class="header">
         <div class="header-left">
-            <h2>Header left</h2>
+            <router-link to="/">Início</router-link> | 
+    <router-link to="/pesquisa-setor">Pesquisa Setor</router-link> | 
+    <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral</router-link>
         </div>
         <div class="header-right">
             <h2>Header right</h2>
@@ -35,6 +37,7 @@
 .header-right {
     width: 40%;
     display: flex;
+    justify-content: flex-end;
 }
 
 

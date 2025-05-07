@@ -29,12 +29,17 @@ const props = defineProps({
 </script>
 <style>
 .botao {
-  background: #f0f0f0;
+    background-color: #006CB5;
   padding: 15px 25px;
   border-radius: 8px;
   min-width: 150px; /* Largura mínima antes de quebrar */
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.botao a {
+  color:aliceblue;
+
 }
 
 .botao {
