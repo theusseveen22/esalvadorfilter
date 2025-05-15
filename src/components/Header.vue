@@ -1,12 +1,12 @@
 <template lang="">
     <div class="header">
         <div class="header-left">
-            <router-link to="/">Início</router-link> | 
-    <router-link to="/pesquisa-setor">Pesquisa Setor</router-link> | 
+            <router-link to="/">Início |</router-link> 
+    <router-link to="/pesquisa-setor">Pesquisa Setor |</router-link> 
     <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral</router-link>
         </div>
         <div class="header-right">
-            <h2>Header right</h2>
+             <router-link to="/">Sobre o aplicativo </router-link> 
         </div>        
     </div>
 </template>
@@ -38,6 +38,24 @@
     width: 40%;
     display: flex;
     justify-content: flex-end;
+}
+
+.header-left a,
+.header-right a  {
+    color: aliceblue;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.header-left a:hover, 
+.header-right a:hover {
+    color: rgb(197, 213, 228);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    text-decoration: none;
 }
 
 

@@ -1,10 +1,10 @@
 <template>
     <div class="botao">
-        <a :href="linkPage">
+        <router-link :to="linkPage">
         <img :src="urlImage" alt="Logo">
         <h3>{{ titulo }}</h3>
         <p>{{ descricao }}</p>
-        </a>
+        </router-link>
     </div>
 </template>
 <script setup>

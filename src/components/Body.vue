@@ -4,13 +4,13 @@
         titulo="Pesquisar em toda secretaria"
         descricao="Pesquisar processos de toda a secretaria"
         :urlImage="iconSearchAll"
-        :linkPage="'/'"
+        :linkPage="'/pesquisa-geral-secretaria'"
         />
         <Botao 
         titulo="Pesquisar por setor"
         descricao="Pesquisar processos por um setor específico"
-        :urlImage="iconSearchSector"
-        :linkPage="'/'"
+        :urlImage="iconSearchSector" 
+        :linkPage="'/pesquisa-setor'"
         />
     </div>
 </template>
