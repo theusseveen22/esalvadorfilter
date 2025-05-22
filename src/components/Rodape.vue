@@ -1,20 +1,13 @@
 <template lang="">
-    <div class="header">
-        <div class="header-left">
-            <router-link to="/home">Início |</router-link> 
-    <router-link to="/pesquisa-setor">Pesquisa Setor |</router-link> 
-    <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral</router-link>
-        </div>
-        <div class="header-right">
-             <router-link to="/">Sobre o aplicativo </router-link> 
-        </div>        
+    <div class="rodape">
+        <h4>© 2025 - SECRETARIA DE INSFRAESTRUTURA E OBRAS PÚBLICAS • Desenvolvimento NTI - Desenvolvedor - Matheus Lima</h4> 
     </div>
 </template>
 <script setup>
 
 </script>
 <style>
-.header {
+.rodape {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -25,8 +18,7 @@
     margin-left: -50vw; /* Corrige possíveis espaçamentos */
     left: 50%;
     position: relative;
-    background-color: #006CB5;
-    color: aliceblue;
+    color: rgb(10, 67, 117);
 }
 
 .header-left {

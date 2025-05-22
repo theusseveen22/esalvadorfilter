@@ -9,7 +9,8 @@ import Login from '../pages/Login.vue';
 import axios from 'axios';
 
 const routes = [
-  { path: '/', component: Home, meta: { requiresAuth: true } },
+  { path: '/', component: Login },
+  { path: '/home', component: Home, meta: { requiresAuth: true } },
   { path: '/pesquisa-setor', component: FindSector, meta: { requiresAuth: true } },
   { path: '/pesquisa-geral-secretaria', component: FindAllSec, meta: { requiresAuth: true }},
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
@@ -28,7 +29,7 @@ router.beforeEach((to, from, next) => {
     const tokenSalvo = localStorage.getItem('token');
     if(tokenSalvo) {
       auth.token = tokenSalvo;
-      axios.defaults.headers.common['Autorization'] = `Bearer ${tokenSalvo}`
+      axios.defaults.headers.common['Authorization'] = `Bearer ${tokenSalvo}`
     }
   }
 

@@ -15,7 +15,8 @@ export const useAuthStore = defineStore('auth', {
       password: senha,
     })
 
-        this.token = response.data.acess_token;
+        this.token = response.data.access_token;
+        console.log('TOKEN ', response.data.access_token);
 
         // Armazena o token no localStorage (opcional)
         localStorage.setItem('token', this.token)

@@ -7,8 +7,8 @@
         :linkPage="'/pesquisa-geral-secretaria'"
         />
         <Botao 
-        titulo="Pesquisar por setor"
-        descricao="Pesquisar processos por um setor específico"
+        titulo="Pesquisar por processo"
+        descricao="Pesquisar processos por um processo específico"
         :urlImage="iconSearchSector" 
         :linkPage="'/pesquisa-setor'"
         />
@@ -24,7 +24,7 @@ import iconSearchSector from '../assets/busca-setor.gif'
 <style>
     .container {
   width: 100vw; /* Garante que ocupe toda a largura da tela */
-  height: 100vh;
+  height: 80vh;
   background-color: #F5F8FA;
   display: flex;
   flex-wrap: wrap;

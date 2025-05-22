@@ -3,7 +3,7 @@
         <router-link :to="linkPage">
         <img :src="urlImage" alt="Logo">
         <h3>{{ titulo }}</h3>
-        <p>{{ descricao }}</p>
+        <h4>{{ descricao }}</h4>
         </router-link>
     </div>
 </template>
