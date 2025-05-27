@@ -2,10 +2,10 @@
 
 const validatUser = (nome, password) => {
         return {
-        validUser: nome,
-        validPassword: password
+         nome,
+         password
         }
     
 }
 
-module.exports = validatUser;
+module.exports = { validatUser };

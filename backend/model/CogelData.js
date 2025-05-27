@@ -1,16 +1,10 @@
 
 
-const getProcessNumber = (token) => {
-    if (!token) return {
-        token,
-        status: true
-    }
-    else {
-        return {
-        message: 'token inválido',
-        status: false
-        }
+const getProcessNumber = (ano, numero) => {
+    return {
+        ano,
+        numero
     }
 }
 
-module.exports = getProcessNumber;
+module.exports = { getProcessNumber };
