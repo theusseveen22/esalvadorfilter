@@ -12,14 +12,10 @@ const getProcessNumberController = async (req, res) => {
             'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive'
         };
-
-        // Duas requisições paralelas (mais rápido)
         const [processoGeral, tramite] = await Promise.all([
             axios.get(`https://apiesalvador.salvador.ba.gov.br/api/consulta/${processo.numero}/${processo.ano}`, { headers }),
             axios.get(`https://apiesalvador.salvador.ba.gov.br/api/historico-tramitacao/${processo.numero}/${processo.ano}`, { headers })
         ]);
-
-        // Uma única resposta com os dois resultados
         res.status(200).json({
             processo: processoGeral.data,
             tramite: tramite.data

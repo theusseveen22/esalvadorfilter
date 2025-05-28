@@ -7,6 +7,7 @@ import NotFound from '../pages/NotFound.vue';
 import { useAuthStore } from '../store/authStore';
 import Login from '../pages/Login.vue';
 import axios from 'axios';
+import hasOneHourPassed from '../Utils/verifyHour';
 
 const routes = [
   { path: '/', component: Login },
@@ -22,22 +23,27 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   const auth = useAuthStore();
-
-  if(!auth.token) {
-    const tokenSalvo = localStorage.getItem('token');
-    if(tokenSalvo) {
-      auth.token = tokenSalvo;
-      axios.defaults.headers.common['Authorization'] = `Bearer ${tokenSalvo}`
-    }
+  
+  if(auth.hour && hasOneHourPassed(auth.hour)) {
+    auth.logout();
+  }
+  
+  const tokenSalvo = localStorage.getItem('token');
+  if (tokenSalvo && !auth.token) {
+    auth.token = tokenSalvo;
+    axios.defaults.headers.common['Authorization'] = `Bearer ${tokenSalvo}`;
   }
 
-  if(to.meta.requiresAuth && !auth.token) {
-    next('/login')
-  } else {
-    next();
+  // Rota requer login, mas usuário não tem token válido
+  if (to.meta.requiresAuth && !auth.token) {
+    window.alert("É necessário fazer login para continuar");
+    return next({ name: 'login' }); // 'login' é o name da rota, sem barra
   }
-})
+
+  // Tudo certo, continua a navegação
+  next();
+});
 
 export default router

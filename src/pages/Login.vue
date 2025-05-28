@@ -3,18 +3,26 @@ import { ref } from 'vue'
 import { useAuthStore } from '../store/authStore'
 import { useRouter } from 'vue-router'
 
+const getCurrentTimestamp = () => {
+  return Date.now();
+}
+
+
 const userApi = ref('')
 const senha = ref('')
 const auth = useAuthStore()
 const router = useRouter()
 const erro = ref('')
 
-const logar = async () => {
+async function logar() {
+  auth.hour = getCurrentTimestamp();
   try {
     await auth.login(userApi.value, senha.value);
-    router.push('/home') // ou a rota protegida
+    router.push('/home'); // ou a rota protegida
   } catch (e) {
-    erro.value = e.message;
+    console.log('ENTREI NO ERRO ', erro.value);
+    erro.value = 'Usuário ou senha inválido';
+    console.log(e);
   }
 }
 </script>

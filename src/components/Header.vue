@@ -6,11 +6,20 @@
     <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral</router-link>
         </div>
         <div class="header-right">
-             <router-link to="/">Sobre o aplicativo </router-link> 
+             <router-link to="/">Sobre o aplicativo </router-link>
+             <router-link @click.prevent="deslogar" to="/">Logout</router-link>
         </div>        
     </div>
 </template>
 <script setup>
+import { useAuthStore } from '../store/authStore';
+
+const auth = useAuthStore();
+
+const deslogar = () => {
+    auth.logout();
+}
+
 
 </script>
 <style>

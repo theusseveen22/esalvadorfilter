@@ -5,6 +5,7 @@ import axios from 'axios'
 export const useAuthStore = defineStore('auth', {
   state: () => ({
     token: null,
+    hour: null
   }),
   actions: {
     async login(userEsalvador, senha) {
@@ -16,13 +17,13 @@ export const useAuthStore = defineStore('auth', {
     })
 
         this.token = response.data.access_token;
-        console.log('TOKEN ', response.data.access_token);
 
         // Armazena o token no localStorage (opcional)
         localStorage.setItem('token', this.token)
 
         // Define token no axios para futuras requisições
         axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`
+
       } catch (error) {
         throw new Error('Login inválido')
       }
