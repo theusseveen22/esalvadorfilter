@@ -27,6 +27,25 @@ const getProcessNumberController = async (req, res) => {
     }
 };
 
+const getAllSec = async (req, res) => {
+    const { token } = req.body;
+
+    try {
+        const headers = {
+            'Authorization': `Bearer ${token}`,
+            'Accept': '*/*',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive'
+        };
+        const response = await axios.get('https://apiesalvador.salvador.ba.gov.br/api/filtra-processos?ano=2025&orgao=2', {headers })
+        res.status(200).json(response.data);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({error: 'error: Requisição retornou inválido'})
+    }
+}
+
 module.exports = {
-    getProcessNumberController
+    getProcessNumberController,
+    getAllSec
 };

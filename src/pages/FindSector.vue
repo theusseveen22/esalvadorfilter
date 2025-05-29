@@ -18,11 +18,9 @@ const token = localStorage.getItem('token');
 const ano = ref('');
 const numProcess = ref('');
 
-console.log('TOKEN :', token);
-
 const getForProcess = async () => {
     try {
-        const response = await axios.post(`http://localhost:3000/get-process-number`, {
+        const response = await axios.post('http://localhost:3000/get-process-number', {
                 numAno: ano.value,
                 token,
                 numProcess: numProcess.value
