@@ -1,0 +1,307 @@
+"orgaos": [
+        {
+            "id": 6867,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "ARSAL",
+            "descricao": "AGÊNCIA REGULADORA E FISCALIZADORA DE SERVIÇOS PÚBLICOS DE SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 5613,
+            "id_orgao_unidade": "5613",
+            "id_unidade_subordinacao": null,
+            "sigla": "CASACIVIL",
+            "descricao": "CASA CIVIL",
+            "ativado": "1"
+        },
+        {
+            "id": 8203,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "CDEMS",
+            "descricao": "SALVADORPAR/COMPANHIA DE DESENVOLVIMENTO E MOBILIZAÇÃO DE ATIVOS DE SALVADOR",
+            "ativado": "0"
+        },
+        {
+            "id": 5188,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "CGM",
+            "descricao": "CONTROLADORIA GERAL DO MUNICÍPIO",
+            "ativado": "1"
+        },
+        {
+            "id": 6511,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "COGEL",
+            "descricao": "COMPANHIA DE GOVERNANÇA ELETRÔNICA DO SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 6803,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "DESAL",
+            "descricao": "COMPANHIA DE DESENVOLVIMENTO URBANO DE SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 6072,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "FCM",
+            "descricao": "FUNDAÇÃO CIDADE MÃE",
+            "ativado": "1"
+        },
+        {
+            "id": 6040,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "FGM",
+            "descricao": "FUNDAÇÃO GREGÓRIO DE MATOS",
+            "ativado": "1"
+        },
+        {
+            "id": 6000,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "FMLF",
+            "descricao": "FUNDAÇÃO MARIO LEAL FERREIRA",
+            "ativado": "1"
+        },
+        {
+            "id": 5186,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "GABP",
+            "descricao": "GABINETE DO PREFEITO ",
+            "ativado": "0"
+        },
+        {
+            "id": 5636,
+            "id_orgao_unidade": "5636",
+            "id_unidade_subordinacao": null,
+            "sigla": "GABVP",
+            "descricao": "GABINETE DA VICE PREFEITURA",
+            "ativado": "1"
+        },
+        {
+            "id": 6950,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "GCM",
+            "descricao": "GUARDA CIVIL MUNICIPAL",
+            "ativado": "1"
+        },
+        {
+            "id": 6446,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "LIMPURB",
+            "descricao": "EMPRESA DE LIMPEZA URBANA DO SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 5082,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "PGMS",
+            "descricao": "PROCURADORIA GERAL DO MUNICIPIO DO SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 8868,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SACPB",
+            "descricao": "SECRETARIA MUNICIPAL DE ARTICULAÇÃO COMUNITÁRIA E PREFEITURAS-BAIRRO.",
+            "ativado": "1"
+        },
+        {
+            "id": 6833,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SALTUR",
+            "descricao": "EMPRESA SALVADOR TURISMO",
+            "ativado": "1"
+        },
+        {
+            "id": 5866,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SECIS",
+            "descricao": "SECRETARIA MUNICIPAL DE SUSTENTABILIDADE, RESILIÊNCIA E BEM-ESTAR E PROTEÇÃO ANIMAL",
+            "ativado": "1"
+        },
+        {
+            "id": 5713,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SECOM",
+            "descricao": "SECRETARIA MUNICIPAL DE COMUNICAÇÃO",
+            "ativado": "1"
+        },
+        {
+            "id": 5486,
+            "id_orgao_unidade": "5486",
+            "id_unidade_subordinacao": null,
+            "sigla": "SECULT",
+            "descricao": "SECRETARIA MUNICIPAL DE CULTURA E TURISMO",
+            "ativado": "1"
+        },
+        {
+            "id": 5732,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEDUR",
+            "descricao": "SECRETARIA MUNICIPAL DE DESENVOLVIMENTO URBANO",
+            "ativado": "1"
+        },
+        {
+            "id": 5642,
+            "id_orgao_unidade": "5642",
+            "id_unidade_subordinacao": null,
+            "sigla": "SEFAZ",
+            "descricao": "SECRETARIA MUNICIPAL DA FAZENDA",
+            "ativado": "1"
+        },
+        {
+            "id": 7251,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEGOV",
+            "descricao": "SECRETARIA DE GOVERNO",
+            "ativado": "1"
+        },
+        {
+            "id": 5913,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEINFRA",
+            "descricao": "SECRETARIA MUNICIPAL DE INFRAESTRUTURA E OBRAS PÚBLICAS",
+            "ativado": "1"
+        },
+        {
+            "id": 5829,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMAN",
+            "descricao": "SECRETARIA MUNICIPAL DE MANUTENÇÃO DA CIDADE",
+            "ativado": "1"
+        },
+        {
+            "id": 7348,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMDEC",
+            "descricao": "SECRETARIA MUNICIPAL DE DESENVOLVIMENTO ECONÔMICO, EMPREGO E RENDA",
+            "ativado": "1"
+        },
+        {
+            "id": 5510,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMGE",
+            "descricao": "SECRETARIA MUNICIPAL DE GESTÃO",
+            "ativado": "1"
+        },
+        {
+            "id": 7189,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMIT",
+            "descricao": "SECRETARIA MUNICIPAL DE INOVAÇÃO E TECNOLOGIA",
+            "ativado": "1"
+        },
+        {
+            "id": 5946,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMOB",
+            "descricao": "SECRETARIA MUNICIPAL DE MOBILIDADE",
+            "ativado": "1"
+        },
+        {
+            "id": 5369,
+            "id_orgao_unidade": "5369",
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMOP",
+            "descricao": "SECRETARIA MUNICIPAL DE ORDEM PÚBLICA",
+            "ativado": "1"
+        },
+        {
+            "id": 5429,
+            "id_orgao_unidade": "5429",
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMPRE",
+            "descricao": "SECRETARIA MUNICIPAL DE PROMOÇÃO SOCIAL, COMBATE À POBREZA, ESPORTES E LAZER",
+            "ativado": "1"
+        },
+        {
+            "id": 5290,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMTEL",
+            "descricao": "SECRETARIA MUNICIPAL DO TRABALHO, ESPORTE E LAZER",
+            "ativado": "0"
+        },
+        {
+            "id": 5344,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SEMUR",
+            "descricao": "SECRETARIA MUNICIPAL DA REPARAÇÃO",
+            "ativado": "1"
+        },
+        {
+            "id": 6396,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SMED",
+            "descricao": "SECRETARIA MUNICIPAL DA EDUCAÇÃO",
+            "ativado": "1"
+        },
+        {
+            "id": 6167,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SMS",
+            "descricao": "SECRETARIA MUNICIPAL DA SAÚDE",
+            "ativado": "1"
+        },
+        {
+            "id": 5319,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SPMJ",
+            "descricao": "SECRETARIA MUNICIPAL DE POLÍTICAS PARA MULHERES, INFÂNCIA E JUVENTUDE",
+            "ativado": "1"
+        },
+        {
+            "id": 8822,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SSAPAR/CDEMS",
+            "descricao": "SALVADORPAR/COMPANHIA DE DESENVOLVIMENTO E MOBILIZAÇÃO DE ATIVOS DE SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 6134,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "SUCOP",
+            "descricao": "SUPERINTENDÊNCIA DE OBRAS PÚBLICAS DO SALVADOR",
+            "ativado": "1"
+        },
+        {
+            "id": 6897,
+            "id_orgao_unidade": null,
+            "id_unidade_subordinacao": null,
+            "sigla": "TRANSALVADOR",
+            "descricao": "SUPERINTENDÊNCIA DE TRÂNSITO DE SALVADOR",
+            "ativado": "1"
+        }
+    ]
+}

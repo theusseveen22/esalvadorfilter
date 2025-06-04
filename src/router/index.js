@@ -15,7 +15,7 @@ const routes = [
   { path: '/pesquisa-setor', component: FindSector, meta: { requiresAuth: true } },
   { path: '/pesquisa-geral-secretaria', component: FindAllSec, meta: { requiresAuth: true }},
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
-  { path: '/login', name: 'Login', component: Login },
+  { path: '/login', name: 'login', component: Login },
 ];
 
 const router = createRouter({
@@ -23,27 +23,25 @@ const router = createRouter({
   routes
 })
 
-router.beforeEach(async (to, from, next) => {
+router.beforeEach(async (to, from) => {
   const auth = useAuthStore();
   
-  if(auth.hour && hasOneHourPassed(auth.hour)) {
+  if (auth.hour && hasOneHourPassed(auth.hour)) {
     auth.logout();
   }
-  
+
   const tokenSalvo = localStorage.getItem('token');
   if (tokenSalvo && !auth.token) {
     auth.token = tokenSalvo;
     axios.defaults.headers.common['Authorization'] = `Bearer ${tokenSalvo}`;
   }
 
-  // Rota requer login, mas usuário não tem token válido
   if (to.meta.requiresAuth && !auth.token) {
     window.alert("É necessário fazer login para continuar");
-    return next({ name: 'login' }); // 'login' é o name da rota, sem barra
+    return { name: 'login' };
   }
 
-  // Tudo certo, continua a navegação
-  next();
+  return true; 
 });
 
-export default router
+export default router;
