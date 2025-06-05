@@ -46,8 +46,4 @@ const props = defineProps({
     min-width: 120px;
     padding: 10px 15px;
   }
-
-  .botoes {
-    width: 100%;
-}
 </style>

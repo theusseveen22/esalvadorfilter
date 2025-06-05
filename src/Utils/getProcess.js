@@ -7,7 +7,6 @@ const getForProcessIdNumero = async (token, ano, Numeroprocesso) => {
                 token,
                 numProcess: Numeroprocesso
         })
-        console.log('resposta > ', response.data);
         return response.data;
     } catch (error) {
         console.log(error)
