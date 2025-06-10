@@ -27,8 +27,8 @@ const loginController = async (req , res) => {
     res.status(200).json(response.data);
     
     } catch (error) {
-        res.status(401).json(error.message);
-        console.error('Erro ao fazer login na API:', error.message);
+        res.status(401).json(error.status);
+        console.error('Erro ao fazer login na API:', error.status);
     }
 }
 

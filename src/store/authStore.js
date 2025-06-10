@@ -5,7 +5,8 @@ import axios from 'axios'
 export const useAuthStore = defineStore('auth', {
   state: () => ({
     token: null,
-    hour: null
+    hour: null,
+    logado: false
   }),
   actions: {
     async login(userEsalvador, senha) {
@@ -24,8 +25,12 @@ export const useAuthStore = defineStore('auth', {
         // Define token no axios para futuras requisições
         axios.defaults.headers.common['Authorization'] = `Bearer ${this.token}`
 
+        this.logado = true;
+
       } catch (error) {
-        throw new Error('Login inválido')
+        this.logado = false;
+        localStorage.removeItem('token')
+       return {error: 401};
       }
     },
     logout() {
@@ -33,6 +38,7 @@ export const useAuthStore = defineStore('auth', {
       this.user = null
       localStorage.removeItem('token')
       delete axios.defaults.headers.common['Authorization']
+      this.logado = false;
     },
     carregarToken() {
       const token = localStorage.getItem('token')

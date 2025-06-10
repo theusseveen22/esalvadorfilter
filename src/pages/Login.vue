@@ -20,9 +20,8 @@ async function logar() {
     await auth.login(userApi.value, senha.value);
     router.push('/home'); // ou a rota protegida
   } catch (e) {
-    console.log('ENTREI NO ERRO ', erro.value);
+    console.log(e.error);
     erro.value = 'Usuário ou senha inválido';
-    console.log(e);
   }
 }
 </script>

@@ -30,7 +30,7 @@ const getProcessNumberController = async (req, res) => {
 
 const getAllSec = async (req, res) => {
     const { token } = req.body;
-
+    const allData = [];
     try {
         const headers = {
             'Authorization': `Bearer ${token}`,
@@ -38,13 +38,28 @@ const getAllSec = async (req, res) => {
             'Accept-Encoding': 'gzip, deflate, br',
             'Connection': 'keep-alive'
         };
-        const response = await axios.get('https://apiesalvador.salvador.ba.gov.br/api/filtra-processos?ano=2025&orgao=5913&status=2', {headers })
-        res.status(200).json(response.data);
+
+        let page = 1; // Mova para fora do loop
+        let lastPage = 1; // Inicialize lastPage
+        let response; // Declare response fora do loop
+
+        do {
+            response = await axios.get(
+                `https://apiesalvador.salvador.ba.gov.br/api/filtra-processos?ano=2025&orgao=5913&status=2&page=${page}`, 
+                { headers }
+            );
+            
+            allData.push(...response.data.data); // Assumindo que os dados estão em response.data.data
+            lastPage = response.data.last_page; // Atualize lastPage com a resposta da API
+            page++;
+        } while (page <= lastPage);
+        
+        res.status(200).json(allData);
     } catch (error) {
         console.log(error);
-        res.status(500).json({error: 'error: Requisição retornou inválido'})
+        res.status(500).json({ error: 'error: Requisição retornou inválido' });
     }
-}
+};
 
 module.exports = {
     getProcessNumberController,

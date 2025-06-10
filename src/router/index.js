@@ -31,6 +31,7 @@ router.beforeEach(async (to, from) => {
   }
 
   const tokenSalvo = localStorage.getItem('token');
+  console.log(tokenSalvo);
   if (tokenSalvo && !auth.token) {
     auth.token = tokenSalvo;
     axios.defaults.headers.common['Authorization'] = `Bearer ${tokenSalvo}`;
@@ -41,7 +42,7 @@ router.beforeEach(async (to, from) => {
     return { name: 'login' };
   }
 
-  return true; 
+  return true;
 });
 
 export default router;

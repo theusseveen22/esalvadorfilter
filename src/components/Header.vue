@@ -2,8 +2,8 @@
     <div class="header">
         <div class="header-left">
             <router-link to="/home">Início |</router-link> 
-    <router-link to="/pesquisa-setor">Pesquisa Setor |</router-link> 
-    <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral</router-link>
+    <router-link to="/pesquisa-setor">Pesquisar processo único |</router-link> 
+    <router-link to="/pesquisa-geral-secretaria">Pesquisa Geral Secretaria</router-link>
         </div>
         <div class="header-right">
              <router-link to="/">Sobre o aplicativo </router-link>
